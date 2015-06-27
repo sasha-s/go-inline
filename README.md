@@ -23,7 +23,7 @@ go get github.com/sasha-s/go-inline/goinline/cmd/goinline
 * Check the generated code in.
 
 
-###### Creating a blueprint.
+##### Creating a blueprint.
 
 Blueprint is a package that implements a certain generic data type/algorithm.
 
@@ -61,7 +61,7 @@ Since we are using `+` and `*` the Vector blueprint can be only used with ints a
 
 Have a look at more complete [example](https://github.com/sasha-s/go-inline/blob/master/examples/blueprints/vector/vector.go)
 
-#### Generating derived code.
+##### Generating derived code.
 
 In case of Vector[Number]:
 
@@ -80,7 +80,7 @@ Note, goinline does not check if the blueprint code compiles. Garbage in, garbag
 
 Writing tests so they work after inlining types is tricky, so goinline does not generate tests by default.
 
-#### goinline tool
+##### goinline tool
 
 <pre>
 goinline -h
@@ -94,7 +94,7 @@ Usage of goinline:
 
 One could get similar results with some scripting around [gofmt -r](https://golang.org/cmd/gofmt/), given that the blueprints are well-structured.
 
-#### FAQ
+##### FAQ
 * Why is there no generics in go?
  - [Official answer](https://golang.org/doc/faq#generics)
  - [Detailed analisys](https://docs.google.com/document/d/1vrAy9gMpMoS3uaVphB32uVXX4pi-HnNjkMEgyAHX4N4/)
