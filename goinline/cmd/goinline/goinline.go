@@ -21,7 +21,7 @@ import (
 func init() {
 	flag.StringVar(&opts.pkg, "package", "", "package to use as a blueprint. Something like `github.com/sasha-s/goinline/examples/blueprints/concurrentmap`")
 	flag.StringVar(&opts.targetDir, "target-dir", "", "where to put the generated code. Will modify the blueprint (according to package) if empty")
-	flag.StringVar(&opts.targetPackageName, "target-package-name", "", "package name for the generated code. Ingored if empty")
+	flag.StringVar(&opts.targetPackageName, "target-package-name", "", "package name for the generated code. Ignored if empty")
 	flag.BoolVar(&opts.w, "w", false, "write result to a file instead of stdout")
 	flag.BoolVar(&opts.tests, "tests", false, "process tests as well")
 }
