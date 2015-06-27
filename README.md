@@ -17,8 +17,8 @@ Install goinline.
 go get github.com/sasha-s/go-inline/goinline/cmd/goinline
 ```
 
-* [Create a blueprint](). Some [examples](https://github.com/sasha-s/go-inline/blob/master/examples/blueprints)
-* [Generate derived code](). Some [examples](https://github.com/sasha-s/go-inline/blob/master/examples/usage). Look for go:generate directives.
+* [Create a blueprint](#creating-a-blueprint). Some [examples](https://github.com/sasha-s/go-inline/blob/master/examples/blueprints)
+* [Generate derived code](#generating-derived-code). Some [examples](https://github.com/sasha-s/go-inline/blob/master/examples/usage). Look for go:generate directives.
 * Use the generated code.  Some [examples](https://github.com/sasha-s/go-inline/blob/master/examples/usage)
 * Check the generated code in.
 
@@ -57,7 +57,7 @@ Number is a type parameter: we want to be able to use derived versions Vector[fl
 
 Note, that Number is a standalone type. This makes it easy to generate the derived versions.
 
-Since we are using `+` and `* the Vector blueprint can be only used with ints and floats.
+Since we are using `+` and `*` the Vector blueprint can be only used with ints and floats.
 
 Have a look at more complete [example](https://github.com/sasha-s/go-inline/blob/master/examples/blueprints/vector/vector.go)
 
