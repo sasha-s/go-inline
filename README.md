@@ -102,4 +102,5 @@ One could get similar results with some scripting around [gofmt -r](https://gola
  - copy&paste: c&p is painful to maintain, though if the blueprint is well-structured, the copy&paste is easy.
  - [gen](http://clipperhouse.github.io/gen/): gen works with [text/template](https://github.com/clipperhouse/linkedlist/blob/master/templates.go), goinline starts with [working, testable go code](https://github.com/sasha-s/go-inline/blob/master/examples/blueprints/search/search.go), so creating the blueprints is easier and cleaner.
  - [goast](https://github.com/go-goast/goast): goast tries to be smart and infer things, goinline is very explicit. Also, goinline code is shorter and simpler.
+ - [gotemplate](https://github.com/ncw/gotemplate): goinline is more explicit, works with multiple files per blueprint. More [details](https://groups.google.com/d/msg/golang-nuts/8wwQcaGRVD4/EfGOpx4A3igJ).
 
