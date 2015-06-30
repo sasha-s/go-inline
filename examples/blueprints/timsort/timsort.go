@@ -1,6 +1,6 @@
 // Adapted from https://github.com/psilva261/timsort
 
-// Package timsort unokents fast stable sort for native types.
+// Package timsort implements fast stable sort for native types.
 //
 // A stable, adaptive, iterative mergesort that requires far fewer than
 // n lg(n) comparisons when running on partially sorted arrays, while
