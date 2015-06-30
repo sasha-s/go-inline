@@ -1,11 +1,10 @@
 package set
 
-// To make sure `go get` fetches the blueprint.
 import (
 	"fmt"
 	"sort"
 
-	_ "github.com/ncw/gotemplate/set"
+	_ "github.com/ncw/gotemplate/set" // To make sure `go get` fetches the blueprint.
 )
 
 // Generate Set[String]
