@@ -1,7 +1,7 @@
 # go-inline
 Generic Data Structures/Algorithms in golang via code generation (glorified copy&paste).
 
-One might one to use goinline tool to generate specific implementation of generic data structures, such as map, vector, matrix, set.
+One might want to use goinline tool to generate specific implementation of generic data structures, such as map, vector, matrix, set.
 Or to  generate specific implementation of generic algorithms, such as sort, binary search.
 
 Goals:
