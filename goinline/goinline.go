@@ -53,8 +53,10 @@ func Inline(fset *token.FileSet, f *ast.File, m map[string]Target) error {
 				if !ok {
 					continue
 				}
-				if _, ok = im[ts.Name.String()]; ok {
-					skip = true
+				if t, ok := m[ts.Name.String()]; ok {
+					if !t.NoFiltering {
+						skip = true
+					}
 				}
 			}
 		}
@@ -83,6 +85,8 @@ type Target struct {
 	Ident string
 	// Imports are the imporst to be added if the inline is triggered.
 	Imports []string
+	// NoFiltering prevents removing type Ident when inlining.
+	NoFiltering bool
 }
 
 // ParseTarget parses a target string.
