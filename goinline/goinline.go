@@ -94,7 +94,7 @@ type Target struct {
 // xxx->[import1,import2,...importn::]yyy
 // Examples:
 // Value->int
-// X->go/topen::*token.FileSet
+// X->go/token::*token.FileSet
 func ParseTarget(s string) (string, Target, error) {
 	ps := strings.Split(s, "->")
 	if len(ps) != 2 {
